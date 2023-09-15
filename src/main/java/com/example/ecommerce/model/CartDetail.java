@@ -1,7 +1,7 @@
 package com.example.ecommerce.model;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
+
 import java.util.Date;
 
 @Entity
@@ -23,7 +23,9 @@ public class CartDetail {
     private int amount;
 
     @Column(name = "price", nullable = false)
-    private BigDecimal price;
+
+    private double price;
+
 
     @Column(name = "total_money", nullable = false)
     private Date createdAt;
@@ -33,11 +35,13 @@ public class CartDetail {
 
     // Getters and setters
 
-    public BigDecimal getPrice() {
+
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
+    public void setPrice(double price) {
+
         this.price = price;
     }
 

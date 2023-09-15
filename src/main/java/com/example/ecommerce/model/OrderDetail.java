@@ -17,30 +17,36 @@ public class OrderDetail {
     private Product product;
 
     @Column(name = "price", nullable = false)
-    private BigDecimal price;
+
+    private double price;
+
 
     @Column(name = "amount", nullable = false)
     private int amount;
 
     @Column(name = "total_money", nullable = false)
-    private BigDecimal totalMoney;
+
+    private double totalMoney;
+
 
     // Getters and setters
 
 
-    public BigDecimal getPrice() {
+
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
-    public BigDecimal getTotalMoney() {
+    public double getTotalMoney() {
         return totalMoney;
     }
 
-    public void setTotalMoney(BigDecimal totalMoney) {
+    public void setTotalMoney(double totalMoney) {
+
         this.totalMoney = totalMoney;
     }
 

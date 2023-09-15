@@ -24,15 +24,17 @@ public class Feedback {
     private String description;
 
     @Column(name = "rating", nullable = false)
-    private BigDecimal rating;
+
+    private double rating;
 
     // Getters and setters
 
-    public BigDecimal getRating() {
+    public double getRating() {
         return rating;
     }
 
-    public void setRating(BigDecimal rating) {
+    public void setRating(double rating) {
+
         this.rating = rating;
     }
 
